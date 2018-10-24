@@ -29,7 +29,7 @@ def turn(board)
 puts "Please enter 1-9:"
 user_input = gets.strip 
 index = input_to_index(user_input)            # define index locally and function call for I2I
-if valid_move?(board,index) || !position_taken?(board,index)  #if valid move and position not taken, move
+if valid_move?(board,index)
   move(board,index,value = "X")         #move function call, set default value variable
   display_board(board)                  #display changed board
 else
